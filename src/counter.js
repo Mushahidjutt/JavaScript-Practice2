@@ -578,23 +578,25 @@ for(let i=0; i<=cars.length; i++){
 
 //Loop Break 
 
-let input=prompt("Enter Password ");
+// let input=prompt("Enter Password ");
 
-for(let i=0; i<3; i++){
-  if (input==="1234")
-  {
+// for(let i=0; i<3; i++){
+//   if (input==="1234")
+//   {
 
-    alert("Your Are Logged In Succesful")
-    console.log("Your Are Logged In Succesful");
-    break;
+//     alert("Your Are Logged In Succesful")
+//     console.log("Your Are Logged In Succesful");
+//     break;
     
-  }
+//   }
 
-  else{
-    input=prompt("Enter Password ");
-    alert("Please Enter Correct Password ")
-  }
-}
+//   else{
+//     input=prompt("Enter Password ");
+//     alert("Please Enter Correct Password ")
+//   }
+// }
+
+
 
 
 
@@ -610,8 +612,52 @@ for(let i=0; i<numbers1.length; i++){
 
 
 
+//Recursion CountDown
+
+function countDown(n){
+  if((n==0) ||(n==1)){
+    console.log("Done");
+    return;
+    
+  } 
+  console.log("CountDown No :",n);
+
+  countDown(n-1);
+}
 
 
+countDown(5);
+
+
+
+//Factorial
+
+function recur(n){
+  if(n==0 || n==1)
+    return 1;
+
+  else
+  {
+       return n*recur(n-1);
+    
+    
+  }
+}
+
+
+console.log(recur(5));
+
+
+
+function Numb(n){
+  if(n>1){
+    console.log("Number is :",n);
+    Numb(n-1)
+    
+  }
+}
+
+Numb(9);
 
 
 
