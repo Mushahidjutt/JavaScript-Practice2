@@ -660,6 +660,23 @@ function Numb(n){
 Numb(9);
 
 
+//Lexical Scoping 
+
+
+function outer() {
+    let name = "Ali";
+
+    function inner() {
+        console.log(name); 
+    }
+
+    inner();
+}
+
+outer();
+
+
+
 
 
 
