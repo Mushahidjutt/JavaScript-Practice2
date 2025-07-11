@@ -675,6 +675,9 @@ function outer() {
 
 outer();
 
+console.log(outer());
+
+
 
 
 
