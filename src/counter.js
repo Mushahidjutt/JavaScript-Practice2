@@ -667,26 +667,57 @@ function outer() {
     let name = "Ali";
 
     function inner() {
+      
         console.log(name); 
+       
+        
     }
 
     inner();
+    
+    
 }
 
 outer();
 
-console.log(outer());
 
 
 
 
+//Closures
+
+ function outer1(){
+  let city = "Lahore";
+
+     function inner(){
+      console.log("Your City is : ",city);
+
+      
+      
+     }
+     inner();
+ }
+
+ outer1();
 
 
 
+function outer2(){
+  let counter = 0;
 
+  function inner(){
+    counter++;
+    console.log("Your Counter Is : ", counter);
+  }
 
+  return inner; 
+}
 
+let myFunc = outer2();  
 
+myFunc(); 
+myFunc(); 
+myFunc(); 
 
 
 
