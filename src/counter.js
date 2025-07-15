@@ -640,7 +640,6 @@ function recur(n){
   {
        return n*recur(n-1);
     
-    
   }
 }
 
@@ -692,13 +691,14 @@ outer();
      function inner(){
       console.log("Your City is : ",city);
 
-      
-      
+    
      }
      inner();
  }
 
  outer1();
+
+
 
 
 
@@ -721,6 +721,79 @@ myFunc();
 
 
 
+let fruits1 = ["apple", "banana", "mango"];
+
+console.log(fruits1);
+
+console.log(fruits1.join(", "));
+ 
+
+
+
+
+
+
+let y1 = '767';
+
+
+// console.log(Boolean(y1));
+
+console.log(typeof(y1));
+
+console.log(Number(y1));
+
+
+let chk = Number(y1)
+
+console.log(typeof(chk));
+
+
+console.log(chk);
+
+
+// console.log(parseInt(y1));
+
+console.log(typeof(y1));
+
+
+let floot = '57.98hg';
+
+console.log(Number(floot));
+console.log(parseInt(floot));
+
+console.log(parseFloat(floot));
+
+
+
+//map 
+
+const array = [1,2,3,4,5,6,767,]
+const name =['lahore','iSlamabad','quetta'];
+
+let mult=array.map(x=>x*2)
+
+console.log(name.join(","));
+
+
+console.log(name.indexOf("quettaa"));
+
+
+let capitalName = name.map(i=>i.toLocaleUpperCase())
+console.log(capitalName);
+
+
+
+let multiple4 = array.filter(i=> i%3===0 || i%5===0 )
+
+console.log("3 and 5 Multiple is : ",multiple4);
+
+console.log(mult);
+
+
+let cityName = name.forEach(name=>{console.log("Hello this my City : ",name);
+})
+
+console.log(cityName);
 
 
 
@@ -728,4 +801,133 @@ myFunc();
 
 
 
+let age1 = 25;
+let message1 = "You are " + (age1) + " years old.";
+console.log(message1); // 👉 "You are 25 years old."
+
+
+
+let chkName = "Dell Laptop ";
+let changeParse = parseInt(chkName);
+
+console.log(changeParse);
+
+console.log(typeof(changeParse));
+
+
+
+
+// alert("Hello this is alert")
+
+// prompt("Enter A Name : ")
+
+let array1 = [2,-76,6,7,8,98,77,33,1,9,2,7,0]
+
+let filerVAL =array1.filter(i=>i<10).map(i=>i*2)
+console.log(filerVAL);
+
+
+let arraySort = array1.sort()
+console.log(arraySort);
+console.log(Math.max(...array1));
+console.log(Math.min(...array1));
+
+
+
+let a1 = 10;
+let b1 = 3;
+
+console.log(a1 + b1-b1*2);
+
+
+let agee = 20;
+console.log(agee < 18 || agee > 25);
+
+
+
+
+
+
+let x1 = 5;
+++x1;
+console.log(x1);     // 👉 6 (Increment)
+
+x1--;
+console.log(x1);     // 👉 5 (Decrement)
+
+
+
+
+
+
+let age2 = 20;
+
+// AND (&&)
+console.log(age2 > 18 && (age2 < 18 || age2 > 25)); // 👉 true
+
+// OR (||)
+console.log(age2 < 18 || age2 > 25); // 👉 false (because 20 < 18 is false but 20 > 25 is false too)
+
+// NOT (!)
+let isAdult = true;
+console.log(!isAdult);  // 👉 false
+
+
+
+let sumFun =function getSum(a, b) {
+  return a + b;
+}
+
+// let total1 = getSum(3, 7); // total = 10
+
+// total1(8,5);
+
+console.log(sumFun(10,10));
+
+
+
+//Arrow Function 
+
+const plus=(a,b) =>{
+return a+b;
+}
+
+
+console.log(plus(2,2));
+
+
+console.log(parseInt("0076ab08"));
+
+
+let chkName1 = "Dell Laptop ";
+let changeParse1 = parseInt(chkName1);
+
+console.log(changeParse1);
+
+console.log(typeof(changeParse1));
+
+
+
+
+//recursive 
+
+
+
+
+let arr2=["mushaid", "ahmad", "Taha", "Rehman"]
+
+let check=arr2.join(" ");
+
+console.log(check);
+
+let arr3 = [2,4,6,8,9]
+
+let arrayMap= arr3.map((num, index));
+console.log(arrayMap);
+
+
+let arrayIndex= arr3.map([i])
+
+
+console.log(arrayMap);
 
